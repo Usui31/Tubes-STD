@@ -37,7 +37,7 @@ void deleteLastCustomer(List_customer &L, adr_customer &P);
 void deleteAfterCustomer(List_customer &L, adr_customer Prec, adr_customer &P);
 
 adr_customer alokasiCutomer(string nama, int usia, string noHP, string tanggalBooking, string totalHarga);
-adr_customer findElm(List_customer L, string x, string y);
+adr_customer findElm(List_customer L, string x);
 void printInfo(List_customer L);
 
 #endif // PARENT_H_INCLUDED
