@@ -28,7 +28,7 @@ void deleteFirstRelasi(List_relasi &L, adr_relasi &P){
     }
 }
 void deleteLastRelasi(List_relasi &L, adr_relasi &P){
-    address_relasi Q;
+    adr_relasi Q;
     if (first(L) == NULL) {
         cout<<"tidak ada data yang bisa dihapus"<<endl;
     }else if (next(first(L)) == NULL) {
@@ -56,7 +56,7 @@ void deleteAfterRelasi(List_relasi &L, adr_relasi Prec, adr_relasi &P){
 
 adr_relasi alokasi(adr_customer P, adr_kamar C){
     adr_relasi Q = new elmlist_relasi;
-    child(Q) = C;
+    kamar(Q) = C;
     customer(Q) = P;
     next(Q) = NULL;
     return Q;
@@ -84,7 +84,7 @@ void printAllInfo(List_relasi &L){
         while (next(Z) != NULL) {
             P = Z;
             Z = next(Z);
-            if ((info(customer(P)).nama == customer(ayah(Z)).nama)) {
+            if ((info(customer(P)).nama == info(customer(Z)).nama)) {
                     cout<<"No Kamar            : "<<info(kamar(Z)).noKamar<<endl;
                     cout<<"Jenis Kamar         : "<<info(kamar(Z)).jenisKamar<<endl;
                     cout<<"Harga               : "<<info(kamar(Z)).harga<<endl;
@@ -146,7 +146,10 @@ void printInfoParent(List_relasi L, string x){
     }
     cout<<"===================================================================="<<endl;
 }
-void printIndukMax(List_relasi &L);
+void printIndukMax(List_relasi &L){
+
+}
+
 void printIndukMin(List_relasi &L);
 void deleteAnak(List_customer &K, List_relasi &L, List_kamar &M, string anak);
 void deleteParent(List_customer &K, List_relasi &L, List_kamar &M, string customer);
