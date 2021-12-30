@@ -1,6 +1,8 @@
 #ifndef RELASI_H_INCLUDED
 #define RELASI_H_INCLUDED
-
+#include "child.h"
+#include "parent.h"
+#include <iostream>
 using namespace std;
 
 #define next(P) P->next
@@ -26,4 +28,14 @@ void insertLast(List_relasi &L, adr_relasi P);
 void deleteFirstRelasi(List_relasi &L, adrrelasi &P);
 void deleteLastRelasi(List_relasi &L, adr_relasi &P);
 void deleteAfterRelasi(List_relasi &L, adr_relasi Prec, adr_relasi &P);
+
+
+adr_relasi alokasi(adr_customer P, adr_kamar C);
+void printAllInfo(List_relasi &L);
+void printInfoChild(List_relasi L, string customer);
+void printInfoParent(List_relasi L, string x);
+void printIndukMax(List_relasi &L);
+void printIndukMin(List_relasi &L);
+void deleteAnak(List_customer &K, List_relasi &L, List_kamar &M, string anak);
+void deleteParent(List_customer &K, List_relasi &L, List_kamar &M, string customer);
 #endif // RELASI_H_INCLUDED
