@@ -32,16 +32,14 @@ struct List_kamar{
 };
 
 void createList(List_kamar &L);
-void insertLast(List_kamar &L, adr_kamar P);
-void deleteFirst(List_kamar &L, adr_kamar &P);
-void deleteLast(List_kamar &L, adr_kamar &P);
-void deleteAfter(List_kamar &L, adr_kamar Prec, adr_kamar &P);
+void insertFirst(List_kamar &L, adr_kamar P);
+void deleteFirstKamar(List_kamar &L, adr_kamar &P);
+void deleteLastKamar(List_kamar &L, adr_kamar &P);
+void deleteAfterKamar(List_kamar &L, adr_kamar Prec, adr_kamar &P);
 
 
-adr_kamar alokasiChild(string noKamar, string jenisKamar, string harga, string status);
+adr_kamar alokasiKamar(string noKamar, string jenisKamar, string harga, string status);
 adr_kamar findElm(List_kamar L, string anak);
 void printInfo(List_kamar L);
-
-
 
 #endif // CHILD_H_INCLUDED
