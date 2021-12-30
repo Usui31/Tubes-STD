@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="child.h" />
+		<Unit filename="customer_parent.cpp" />
+		<Unit filename="hotel_relasi.cpp" />
+		<Unit filename="kamar_child.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="parent.h" />
+		<Unit filename="relasi.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

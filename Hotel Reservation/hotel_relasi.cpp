@@ -8,7 +8,7 @@ void insertLast(List_relasi &L, adr_relasi P){
     if (first(L) == NULL) {
         first(L) = P;
     }else {
-        address_relasi Q = first(L);
+        adr_relasi Q = first(L);
         while (next(Q) != NULL) {
             Q = next(Q);
         }
@@ -16,6 +16,6 @@ void insertLast(List_relasi &L, adr_relasi P){
     }
 }
 
-void deleteFirstRelasi(List_relasi &L, adrrelasi &P);
+void deleteFirstRelasi(List_relasi &L, adr_relasi &P);
 void deleteLastRelasi(List_relasi &L, adr_relasi &P);
 void deleteAfterRelasi(List_relasi &L, adr_relasi Prec, adr_relasi &P);

@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1640836059 source:d:\code blocks\tubes std\github\hotel reservation\main.cpp
+	<iostream>
+
+1640875072 source:d:\code blocks\tubes std\github\hotel reservation\customer_parent.cpp
+	"parent.h"
+
+1640875072 d:\code blocks\tubes std\github\hotel reservation\parent.h
+	<iostream>
+
+1640875072 source:d:\code blocks\tubes std\github\hotel reservation\kamar_child.cpp
+	"child.h"
+
+1640875072 d:\code blocks\tubes std\github\hotel reservation\child.h
+	<iostream>
+
+1640876318 source:d:\code blocks\tubes std\github\hotel reservation\hotel_relasi.cpp
+	"relasi.h"
+
+1640876139 d:\code blocks\tubes std\github\hotel reservation\relasi.h
+	"child.h"
+	"parent.h"
+	<iostream>
+
