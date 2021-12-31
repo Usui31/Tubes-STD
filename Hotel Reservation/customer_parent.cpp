@@ -5,17 +5,14 @@ void createList(List_customer &L){
     last(L) = NULL;
 }
 
-void insertLast(List_customer &L, adr_customer P, adr_customer Q){
+void insertLast(List_customer &L, adr_customer P){
     if(first(L) == NULL && last(L) == NULL) {
         first(L) = P;
-        next(P) = Q;
-        next(Q) = P;
-        last(L) = Q;
+        last(L) = P;
     }else {
         next(last(L)) = P;
-        next(P) = Q;
-        next(Q) = first(L);
-        last(L) = Q;
+        next (P) = first(L);
+        last(L) = P;
     }
 }
 
@@ -65,7 +62,8 @@ void deleteAfterCustomer(List_customer &L, adr_customer Prec, adr_customer &P){
     }
 }
 
-adr_customer alokasiCutomer(string nama, int usia, int noHp, string tanggalBooking, string totalHarga){
+adr_customer alokasiCutomer(string nama, string
+                             usia, string noHp, string tanggalBooking, string totalHarga){
     adr_customer P;
 
     P = new elm_customer;

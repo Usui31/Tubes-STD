@@ -2,6 +2,7 @@
 #define RELASI_H_INCLUDED
 #include "child.h"
 #include "parent.h"
+#include "relasi.h"
 #include <iostream>
 using namespace std;
 

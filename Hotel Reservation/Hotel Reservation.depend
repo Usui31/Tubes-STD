@@ -22,24 +22,29 @@
 	"parent.h"
 	<iostream>
 
-1640877654 source:c:\std\tubes-std\hotel reservation\hotel_relasi.cpp
+1640943451 source:c:\std\tubes-std\hotel reservation\hotel_relasi.cpp
 	"relasi.h"
 
-1640877654 c:\std\tubes-std\hotel reservation\relasi.h
+1640943874 c:\std\tubes-std\hotel reservation\relasi.h
 	"child.h"
 	"parent.h"
+	"relasi.h"
 	<iostream>
 
 1640864791 c:\std\tubes-std\hotel reservation\child.h
 	<iostream>
 
-1640879317 c:\std\tubes-std\hotel reservation\parent.h
+1640943528 c:\std\tubes-std\hotel reservation\parent.h
 	<iostream>
 
-1640877654 source:c:\std\tubes-std\hotel reservation\main.cpp
+1640944775 source:c:\std\tubes-std\hotel reservation\main.cpp
 	<iostream>
+	<windows.h>
+	"child.h"
+	"parent.h"
+	"relasi.h"
 
-1640879325 source:c:\std\tubes-std\hotel reservation\customer_parent.cpp
+1640944591 source:c:\std\tubes-std\hotel reservation\customer_parent.cpp
 	"parent.h"
 
 1640879371 source:c:\std\tubes-std\hotel reservation\kamar_child.cpp

@@ -11,8 +11,8 @@ using namespace std;
 
 struct customer{
     string nama;
-    int usia;
-    int noHp;
+    string usia;
+    string noHp;
     string tanggalBooking;
     string totalHarga;
 };
@@ -31,12 +31,12 @@ struct List_customer{
 };
 
 void createList(List_customer &L);
-void insertLast(List_customer &L, adr_customer P, adr_customer Q);
+void insertLast(List_customer &L, adr_customer P);
 void deleteFirstCustomer(List_customer &L, adr_customer &P);
 void deleteLastCustomer(List_customer &L, adr_customer &P);
 void deleteAfterCustomer(List_customer &L, adr_customer Prec, adr_customer &P);
 
-adr_customer alokasiCutomer(string nama, int usia, int noHP, string tanggalBooking, string totalHarga);
+adr_customer alokasiCutomer(string nama, string usia, string noHp, string tanggalBooking, string totalHarga);
 adr_customer findElm(List_customer L, string x);
 void printInfo(List_customer L);
 
